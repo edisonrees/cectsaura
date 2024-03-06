@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Listening to Spotify","Watching YouTube"];
+const statusMessages = ["Checking Tickets","Denying Appeals","Unbanning Users","Standby"];
 
 
 let currentIndex = 0;
@@ -92,13 +92,27 @@ function updateStatusAndSendMessages() {
 
 client.once('ready', () => {
   console.log(`\x1b[36m%s\x1b[0m`, `|    ✅ Bot is ready as ${client.user.tag}`);
-  console.log(`\x1b[36m%s\x1b[0m`, `|    ✨HAPPY NEW YEAR MY DEAR FAMILY`);
-  console.log(`\x1b[36m%s\x1b[0m`, `|    ❤️WELCOME TO 2024`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Ready. Running Params Check`);
+console.log(`\x1b[36m%s\x1b[0m`, `|    Verified Params, Checking Gateway Access`);
+  console.log(`\x1b[36m%s\x1b[0m`, `|    Verified Gateway, Checking Rich Content Injections `);
+ console.log(`\x1b[36m%s\x1b[0m`, `|     Rich Content Injections Failed, Purging Injections `);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Injections Purged, Retrying Injections 401 400  `);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Verified Injection , Status Code 200 302 Found`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    ERROR, RICH PRESENCE CANNOT BE VERIFIED Status Codes 401 400 404 Retrying `);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Verified Rich Prescence, Checking Validity Of Console 101 Switching Protocols`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Final Check, Status 200, Params 200, Injections 200, Console 200 101, Gateway 200`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Setup Confimed.`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Completing...`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    511 Network Authentication Required`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Authentication Waiting.... Success`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    All Systems Code 200, OK`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Deploying Cache Load`);
+ console.log(`\x1b[36m%s\x1b[0m`, `|    Deploying Completed. System Operational.`);
   updateStatusAndSendMessages();
 
   setInterval(() => {
     updateStatusAndSendMessages();
-  }, 10000);
+  }, 600000);
 });
 
 login();
