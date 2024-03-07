@@ -27,7 +27,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Checking Tickets","Denying Appeals","Unbanning Users","Standby"];
+const statusMessages = ["Buying Boeing EA-18G Growlers","Deploying Navy","Loaning From BRICS","Managing The Country","Extinguishing Fires","Jailing Criminals","Running The Court"];
 
 
 let currentIndex = 0;
